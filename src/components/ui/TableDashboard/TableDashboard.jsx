@@ -1,10 +1,10 @@
-
-function TableDashboard() {
+import {Link} from "react-router-dom";
+function TableDashboard({title, button}) {
     return (
        <div className="container">
         <div className="d-flex justify-content-between mb-3">
-            <h3>Users</h3>
-            <button className="btn btn-primary">Add New User</button>
+            <h3>{title}</h3>
+            <Link to="add" className="btn btn-primary">{button}</Link>
         </div>
         <table className="table">
     <thead>
